@@ -1,0 +1,22 @@
+digraph {
+	Happiness [label="Happiness (Ladder score)"]
+	Income [label="Income (Log GDP per capita)"]
+	SocialSupport [label="Social Support"]
+	LifeExpectancy [label="Healthy Life Expectancy"]
+	Freedom [label="Freedom to Make Life Choices"]
+	Generosity [label=Generosity]
+	Corruption [label="Perceptions of Corruption"]
+	Temperature [label="Average Temperature"]
+	Dystopia [label="Dystopia + Residual"]
+	Income -> Happiness
+	SocialSupport -> Happiness
+	Happiness -> LifeExpectancy
+	Freedom -> Happiness
+	Generosity -> Happiness
+	Corruption -> Happiness
+	Temperature -> LifeExpectancy
+	Dystopia -> Happiness
+	SocialSupport -> Income
+	Income -> LifeExpectancy
+	Income -> Freedom
+}
